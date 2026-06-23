@@ -1,0 +1,57 @@
+<html lang="pt-BR">
+<title>Inscrição</title>
+<body bgcolor="#406ee3" text="white">
+<h1>Sistema de Inscrição</h1><hr>
+<h3><a href="index.html">Voltar para a página inicial</a></h3><hr>
+
+<form action="#">
+<fieldset>
+<legend>Dados Pessoais</legend>
+<label>Nome: <input type="text" required></label><br>
+<label>Sobrenome: <input type="text" required></label><br>
+<label>CPF: <input type="text" required></label><br>
+<label>RG: <input type="text" required></label><br>
+<label>Data de Nascimento: <input type="date" required></label><br>
+<label>E-mail: <input type="email" required></label><br>
+<label>Senha: <input type="password" required></label><br>
+<label>Telefone: <input type="tel" required></label>
+</fieldset>
+
+<fieldset>
+<legend>Dados Profissionais</legend>
+<label>Empresa: <input type="text"></label><br>
+<label>Cargo: <input type="text"></label><br>
+<label>Site/Portfólio: <input type="url"></label><br>
+<label>Área de Atuação:</label><br>
+<input type="radio" name="area" value="dev"> Dev
+<input type="radio" name="area" value="infra"> Infra
+<input type="radio" name="area" value="design"> Design
+</fieldset>
+
+<fieldset>
+<legend>Participação e Preferências</legend>
+<label>Dias de evento (1 a 4): <input type="number" min="1" max="4"></label><br>
+<label>Comprovante (Estudante/ID): <input type="file"></label><br>
+<label>Cor do Crachá: <input type="color"></label><br>
+<label>Nível de Experiência: <input type="range" min="1" max="10"></label><br>
+<label>Trilhas de interesse:</label><br>
+<input type="checkbox" name="trilha" value="ia"> Inteligência Artificial
+<input type="checkbox" name="trilha" value="cloud"> Computação em Nuvem<br>
+<label>Alimentação Especial:
+<select>
+<option value="nenhuma">Nenhuma
+<option value="vegana">Vegana
+<option value="vegetariana">Vegetariana
+</select></label>
+</fieldset>
+
+<fieldset>
+<legend>Informações Adicionais</legend>
+<label>Observações:<br>
+<textarea rows="4" cols="40"></textarea></label>
+</fieldset><br>
+
+<button type="submit">Enviar Minha Inscrição</button>
+</form>
+</body>
+</html>
