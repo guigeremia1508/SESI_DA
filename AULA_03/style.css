@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#406ee3;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    padding:30px;
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:20px;
+    color:#ffffff;
+}
+
+h2{
+    margin-top:30px;
+    margin-bottom:15px;
+    color:#ffe082;
+    border-bottom:2px solid #ffe082;
+    padding-bottom:5px;
+}
+
+h3,h4{
+    margin:15px 0;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+    color:#ffeb3b;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+/* ===========================
+   LINHAS
+=========================== */
+
+hr{
+    margin:25px 0;
+    border:1px solid rgba(255,255,255,.4);
+}
+
+/* ===========================
+   PARÁGRAFOS
+=========================== */
+
+p{
+    margin-bottom:15px;
+}
+
+/* ===========================
+   LISTAS
+=========================== */
+
+ol,
+ul{
+    margin-left:30px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+li{
+    margin:8px 0;
+}
+
+/* ===========================
+   SEÇÕES
+=========================== */
+
+section{
+    background:#355fc7;
+    margin:25px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   ARTIGOS
+=========================== */
+
+article{
+    background:#4b75df;
+    padding:12px;
+    margin:10px 0;
+    border-radius:6px;
+}
+
+/* ===========================
+   HORÁRIOS
+=========================== */
+
+time{
+    font-weight:bold;
+    color:#ffeb3b;
+}
+
+/* ===========================
+   TABELA
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+    color:black;
+}
+
+caption{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+th{
+    background:#1a3a8f;
+    color:white;
+}
+
+th,
+td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+tfoot{
+    background:#eeeeee;
+    font-weight:bold;
+}
+
+/* ===========================
+   NOTÍCIAS
+=========================== */
+
+blockquote{
+    background:white;
+    color:black;
+    padding:15px;
+    margin:15px 0;
+    border-left:6px solid orange;
+    border-radius:5px;
+}
+
+address{
+    font-style:italic;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   GALERIA
+=========================== */
+
+figure{
+    display:inline-block;
+    width:220px;
+    margin:10px;
+    text-align:center;
+}
+
+img{
+    width:220px;
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+    border:3px solid white;
+}
+
+figcaption{
+    margin-top:8px;
+}
+
+/* ===========================
+   VÍDEOS E ÁUDIOS
+=========================== */
+
+video{
+    width:500px;
+    max-width:100%;
+    margin:10px 0 20px;
+    display:block;
+}
+
+audio{
+    width:400px;
+    max-width:100%;
+    margin:10px 0 20px;
+    display:block;
+}
+
+/* ===========================
+   FAQ
+=========================== */
+
+details{
+    background:white;
+    color:black;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* ===========================
+   FORMULÁRIO
+=========================== */
+
+form{
+    background:#355fc7;
+    padding:25px;
+    border-radius:10px;
+}
+
+fieldset{
+    margin-bottom:20px;
+    border:2px solid white;
+    padding:20px;
+}
+
+legend{
+    font-weight:bold;
+    padding:0 10px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+    font-size:15px;
+}
+
+input[type=radio],
+input[type=checkbox]{
+    width:auto;
+    margin-right:5px;
+}
+
+button{
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e68900;
+}
+
+/* ===========================
+   LABORATÓRIO
+=========================== */
+
+iframe{
+    border:2px solid white;
+}
+
+dialog{
+    background:white;
+    color:black;
+    padding:10px;
+    border-radius:6px;
+}
+
+progress,
+meter{
+    width:250px;
+    height:20px;
+}

@@ -1,57 +1,161 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-<title>Inscrição</title>
-<body bgcolor="#406ee3" text="white">
-<h1>Sistema de Inscrição</h1><hr>
-<h3><a href="index.html">Voltar para a página inicial</a></h3><hr>
 
-<form action="#">
-<fieldset>
-<legend>Dados Pessoais</legend>
-<label>Nome: <input type="text" required></label><br>
-<label>Sobrenome: <input type="text" required></label><br>
-<label>CPF: <input type="text" required></label><br>
-<label>RG: <input type="text" required></label><br>
-<label>Data de Nascimento: <input type="date" required></label><br>
-<label>E-mail: <input type="email" required></label><br>
-<label>Senha: <input type="password" required></label><br>
-<label>Telefone: <input type="tel" required></label>
-</fieldset>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - TechFuture Expo 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<fieldset>
-<legend>Dados Profissionais</legend>
-<label>Empresa: <input type="text"></label><br>
-<label>Cargo: <input type="text"></label><br>
-<label>Site/Portfólio: <input type="url"></label><br>
-<label>Área de Atuação:</label><br>
-<input type="radio" name="area" value="dev"> Dev
-<input type="radio" name="area" value="infra"> Infra
-<input type="radio" name="area" value="design"> Design
-</fieldset>
+<body>
 
-<fieldset>
-<legend>Participação e Preferências</legend>
-<label>Dias de evento (1 a 4): <input type="number" min="1" max="4"></label><br>
-<label>Comprovante (Estudante/ID): <input type="file"></label><br>
-<label>Cor do Crachá: <input type="color"></label><br>
-<label>Nível de Experiência: <input type="range" min="1" max="10"></label><br>
-<label>Trilhas de interesse:</label><br>
-<input type="checkbox" name="trilha" value="ia"> Inteligência Artificial
-<input type="checkbox" name="trilha" value="cloud"> Computação em Nuvem<br>
-<label>Alimentação Especial:
-<select>
-<option value="nenhuma">Nenhuma
-<option value="vegana">Vegana
-<option value="vegetariana">Vegetariana
-</select></label>
-</fieldset>
+    <h1>Sistema de Inscrição</h1>
 
-<fieldset>
-<legend>Informações Adicionais</legend>
-<label>Observações:<br>
-<textarea rows="4" cols="40"></textarea></label>
-</fieldset><br>
+    <hr>
 
-<button type="submit">Enviar Minha Inscrição</button>
-</form>
+    <h3><a href="index.html">Voltar para a página inicial</a></h3>
+
+    <hr>
+
+    <form action="#">
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" required>
+
+            <label for="rg">RG:</label>
+            <input type="text" id="rg" required>
+
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Dados Profissionais</legend>
+
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa">
+
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo">
+
+            <label for="site">Site / Portfólio:</label>
+            <input type="url" id="site">
+
+            <p><strong>Área de Atuação:</strong></p>
+
+            <label>
+                <input type="radio" name="area" value="dev">
+                Desenvolvimento
+            </label>
+
+            <label>
+                <input type="radio" name="area" value="infra">
+                Infraestrutura
+            </label>
+
+            <label>
+                <input type="radio" name="area" value="design">
+                Design
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Participação e Preferências</legend>
+
+            <label for="dias">
+                Dias do evento (1 a 4):
+            </label>
+
+            <input type="number" id="dias" min="1" max="4">
+
+            <label for="arquivo">
+                Comprovante (Estudante/ID):
+            </label>
+
+            <input type="file" id="arquivo">
+
+            <label for="cor">
+                Cor do Crachá:
+            </label>
+
+            <input type="color" id="cor">
+
+            <label for="nivel">
+                Nível de Experiência:
+            </label>
+
+            <input type="range" id="nivel" min="1" max="10">
+
+            <p><strong>Trilhas de Interesse:</strong></p>
+
+            <label>
+                <input type="checkbox" name="trilha" value="ia">
+                Inteligência Artificial
+            </label>
+
+            <label>
+                <input type="checkbox" name="trilha" value="cloud">
+                Computação em Nuvem
+            </label>
+
+            <label for="alimentacao">
+                Alimentação Especial:
+            </label>
+
+            <select id="alimentacao">
+
+                <option value="nenhuma">Nenhuma</option>
+
+                <option value="vegana">Vegana</option>
+
+                <option value="vegetariana">Vegetariana</option>
+
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Informações Adicionais</legend>
+
+            <label for="obs">
+                Observações:
+            </label>
+
+            <textarea id="obs" rows="5"></textarea>
+
+        </fieldset>
+
+        <button type="submit">
+            Enviar Minha Inscrição
+        </button>
+
+    </form>
+
 </body>
+
 </html>
