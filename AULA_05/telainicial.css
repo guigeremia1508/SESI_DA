@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* =======================================================
+   ESTILIZAÇÃO DO TOPO (HEADER)
+   ======================================================= */
+.topo-preto {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    width: 100%;
+}
+
+.foto-perfil {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.topo-preto h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.logo-petshop {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* =======================================================
+   ESTILIZAÇÃO DA PESQUISA
+   ======================================================= */
+.container-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 30px 0;
+}
+
+.input-pesquisa {
+    width: 100%;
+    max-width: 420px;
+    height: 45px;
+    border: 1px solid #999999;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+}
+
+/* =======================================================
+   ESTILIZAÇÃO DOS CARDS (CATEGORIAS)
+   ======================================================= */
+.secao-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card-categoria {
+    position: relative;
+    width: 160px;
+    height: 190px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #e0e0e0; /* Fundo cinza enquanto a imagem não carrega */
+}
+
+.card-categoria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%); /* Escurece suavemente a foto para a letra branca destacar */
+}
+
+.card-categoria span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* =======================================================
+   ESTILIZAÇÃO DO BANNER INFERIOR
+   ======================================================= */
+.banner-inferior {
+    background-color: #000000;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card-promocao-branco {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 780px;
+    border-radius: 35px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-promocao {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-promocao h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.btn-juntar-se {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.2s;
+}
+
+.btn-juntar-se:hover {
+    background-color: #333333;
+}
+
+.foto-banner-gato {
+    width: 260px;
+    height: 160px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Responsividade Básica para Celulares */
+@media (max-width: 650px) {
+    .card-promocao-branco {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .info-promocao {
+        align-items: center;
+    }
+    .foto-banner-gato {
+        width: 100%;
+        max-width: 280px;
+    }
+}
