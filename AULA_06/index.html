@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="campo1" type="text" value="0">
+    <input id="campo2" type="text" value="0">
+    <button onclick="somaDeDoisValores()">calcular</button>
+
+    <h1 id="resultado">Resultado: 0</h1>
+
+    <script>
+        const campo1 = document.getElementById("campo1");
+        const campo2 = document.getElementById("campo2");
+        const resultado = document.getElementById("resultado");
+
+        function somaDeDoisValores(){
+            var soma = Number(campo1.value) + Number(campo2.value);
+            
+            alert("A soma dos dois valores é = " + soma);
+            resultado.innerHTML = "Resultado: " + soma;
+        }
+    </script>
+    
+</body>
+</html>
