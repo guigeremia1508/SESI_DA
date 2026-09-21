@@ -1,22 +1,23 @@
 function login() {
     const usuarioDigitado = document.getElementById('usuario').value;
     const senhaDigitada = document.getElementById('senha').value;
+    const usuarioSalvo = localStorage.getItem('nicolas');
 
-    const usuarioSalvo = localStorage.getItem('USUARIO');
-    const senhaSalva = localStorage.getItem('SENHA');
+    // Pega a resposta do reCAPTCHA
+    const recaptchaResponse = grecaptcha.getResponse();
 
-    if (usuarioDigitado === usuarioSalvo && senhaDigitada === senhaSalva) {
+    // 1. Verifica se o usuário marcou o CAPTCHA
+    if (recaptchaResponse.length === 0) {
+        alert('Por favor, confirme que você não é um robô!');
+        return;
+    }
+
+    // 2. Valida o usuário e a senha
+    if (usuarioDigitado === 'nicolas' && senhaDigitada === usuarioSalvo) {
         alert('Login correto!');
     } else {
         alert('Incorreto!');
+        // Reseta o captcha em caso de erro na senha
+        grecaptcha.reset();
     }
-
-    const nome = localStorage.getItem("nome");
-    alert(nome);
-
-    localStorage.setItem("nome", "Frederico");
-    alert(localStorage.getItem("nome"));
-
-    localStorage.removeItem("nome");
-    alert(localStorage.getItem("nome"));
 }

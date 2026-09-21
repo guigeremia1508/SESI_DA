@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="PT-br">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LocalStorage</title>
+    <title>Login Simples</title>
+    <!-- Script do Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
 <body>
 
-    <label for="usuario">Usuário</label>
-    <input id="usuario" type="text">
+    <input type="text" id="usuario" placeholder="Usuário">
+    <br><br>
+    <input type="password" id="senha" placeholder="Senha">
+    <br><br>
 
-    <label for="senha">Senha</label>
-    <input id="senha" type="password">
+    <!-- Chave global de teste do Google (funciona direto abrindo o arquivo) -->
+    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+    <br>
 
-    <button>Login</button>
+    <button onclick="login()">Login</button>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
