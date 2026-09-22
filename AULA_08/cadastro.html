@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+</head>
+<body>
+    <a href="login.html">Voltar</a>
+    <h2>Criar conta</h2>
+    <form onsubmit="salvarCadastro(event)">
+        <label for="cadastroNome">Usuário</label>
+        <input type="text" id="cadastroNome" required>
+        <label for="cadastroUsuario">Usuário</label>
+        <input type="text" id="cadastroUsuario" required>
+        <label for="cadastroSenha">Senha</label>
+        <input type="password" id="cadastroSenha" minlength="4" required>
+        <label for="cadastroPalavra">Palavra de passe</label>
+        <input type="text" id="cadastroPalavra" required>
+        <button type="submit">Salvar conta</button>
+    </form>
+    <p id="mensagem"></p>
+    <script src="script.js"></script>
+</body>
+</html>

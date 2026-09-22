@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar senha</title>
+</head>
+<body>
+    <a href="entrar.html">Voltar</a>
+    <h2>Recuperar senha</h2>
+    <p>Informe seu usuário, palavra de passe e uma nova senha.</p>
+    <form onsubmit="recuperarSenha(event)">
+        <label for="recuperarUsuario">Usuário</label>
+        <input type="text" id="recuperarUsuario" required>
+        <label for="recuperarPalavra">Palavra de passe</label>
+        <input type="text" id="recuperarPalavra" required>
+        <label for="novaSenha">Nova senha</label>
+        <input type="password" id="novaSenha" minlength="4" required>
+        <button type="submit">Alterar senha</button>
+    </form>
+    <p id="mensagem"></p>
+    <script src="script.js"></script>
+</body>
+</html>

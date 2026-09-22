@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar conta</title>
+</head>
+<body onload="carregarConta()">
+    <h2>Editar conta</h2>
+    <form onsubmit="editarConta(event)">
+        <label for="editarNome">Usuário</label>
+        <input type="text" id="editarNome" required>
+        <label for="editarUsuario">Usuário</label>
+        <input type="text" id="editarUsuario" required>
+        <label for="editarSenha">Senha</label>
+        <input type="password" id="editarSenha" minlength="4" required>
+        <label for="editarPalavra">Palavra de passe</label>
+        <input type="text" id="editarPalavra" required>
+        <button type="submit">Salvar alterações</button>
+    </form>
+    <a href="login.html">Sair</a>
+    <p id="mensagem"></p>
+    <script src="script.js"></script>
+</body>
+</html>
